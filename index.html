@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GigFloww - Your Creative Gig Journey Starts Here</title>
+    <style>
+      /* General Styles */
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #f0f0f0;
+        background: #000;
+      }
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
+      }
+      /* Animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Header Section with Hero Image */
+      header {
+        background: #111;
+        padding: 60px 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .hero-text {
+        flex: 1 1 300px;
+        animation: fadeInUp 1s ease-out;
+      }
+      .hero-text h1 {
+        font-size: 2.8em;
+        margin-bottom: 20px;
+      }
+      .hero-text p {
+        font-size: 1.2em;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .hero-image {
+        flex: 1 1 300px;
+        animation: fadeInUp 1s ease-out 0.5s;
+        animation-fill-mode: both;
+      }
+      .hero-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      /* About Section */
+      .about {
+        padding: 40px 20px;
+        text-align: center;
+        background: #1a1a1a;
+      }
+      .about h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      .about p {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Features Section */
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px 20px;
+        background: #000;
+      }
+      .feature {
+        flex: 1 1 250px;
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        text-align: center;
+        background: #1a1a1a;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeInUp 1s ease-out;
+      }
+      .feature:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+      }
+      .feature h3 {
+        margin-bottom: 15px;
+      }
+
+      /* Call-to-Action (CTA) Section */
+      .cta {
+        text-align: center;
+        padding: 40px 20px;
+        background: #1a1a1a;
+      }
+      .cta a {
+        background: #007bff;
+        color: #fff;
+        padding: 15px 30px;
+        border: 5px solid #007bff;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 25px;
+        transition: background 0.3s ease, transform 0.3s ease;
+        animation: fadeInUp 1s ease-out;
+      }
+      .cta a:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+        }
+        .hero-text h1 {
+          font-size: 2em;
+        }
+        .about h2 {
+          font-size: 1.8em;
+        }
+        .cta a {
+          font-size: 1em;
+          padding: 10px 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section with Hero Image -->
+    <header>
+      <div class="hero-text">
+        <h1>Your Creative Gig Journey Starts Here</h1>
+        <p>
+          Welcome to GigFloww - the platform that connects creative talents with
+          opportunities that spark innovation and success.
+        </p>
+      </div>
+      <div class="hero-image">
+        <!-- Replace the image URL below with your desired hero image -->
+        <img
+          src="https://plus.unsplash.com/premium_photo-1676998931123-75789162f170?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="GigFloww Hero Image"
+        />
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+      <h2>About GigFloww</h2>
+      <p>
+        GigFloww is designed for creatives who are ready to make an impact in
+        their industry. Connect with like-minded professionals, explore new
+        projects, and elevate your career.
+      </p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="feature">
+        <h3>Discover Projects</h3>
+        <p>
+          Explore a wide variety of gigs and creative opportunities that match
+          your skills and interests.
+        </p>
+      </div>
+      <div class="feature">
+        <h3>Connect with Talent</h3>
+        <p>
+          Join a network of creative professionals and collaborate on exciting
+          projects.
+        </p>
+      </div>
+      <div class="feature">
+        <h3>Boost Your Career</h3>
+        <p>
+          Gain visibility, build your portfolio, and access exclusive resources
+          designed for growth.
+        </p>
+      </div>
+      <div class="feature">
+        <h3>Flexible Engagement</h3>
+        <p>
+          Work on projects that fit your schedule and lifestyle while advancing
+          your professional journey.
+        </p>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+      <a href="#join">Join Now</a>
+    </section>
+  </body>
+</html>
